@@ -10,19 +10,7 @@
 
 chrome.browserAction.onClicked.addListener(function () {
     chrome.tabs.create({ url: chrome.runtime.getURL("localpage.html") });
-    console.log("I did it!")
+    console.log("I did it!");
+    //chrome.browserAction.onClicked.removeListener(arguments.callee);
+
 });
-
-var full = false;
-
-document.body.addEventListener('click', function(){
-  if(full==false){
-    document.getElementById("mask").requestFullscreen()
-    full = true;
-  }
-  else{
-    document.exitFullscreen();
-    full = false;
-  }
-
-})

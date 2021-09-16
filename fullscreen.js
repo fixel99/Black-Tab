@@ -11,3 +11,24 @@ document.body.addEventListener('click', function(){
   }
 
 })
+
+var fired = false;
+
+document.body.addEventListener('keydown', (f) => {
+  if(fired==false){
+    if(full==false){
+      document.getElementById("mask").requestFullscreen()
+      full = true;
+      fired = true;
+    }
+    else{
+      document.exitFullscreen();
+      full = false;
+      fired = true;
+    }
+  }
+})
+
+document.body.addEventListener('keyup', (f) => {
+  fired = false;
+})

@@ -32,3 +32,24 @@ document.body.addEventListener('keydown', (f) => {
 document.body.addEventListener('keyup', (f) => {
   fired = false;
 })
+
+
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
+
+
+document.body.addEventListener('mousedown', clicked, false);
+
+function clicked(e) {
+    switch (e.button) {
+        case 0:
+          // left mouse button
+          break;
+        case 1:
+          // middle mouse button
+          break;
+        default:
+          window.close()
+    }
+}
+
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); }) //disable context menu on right click

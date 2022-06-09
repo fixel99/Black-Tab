@@ -48,8 +48,10 @@ function clicked(e) {
           // middle mouse button
           break;
         default:
-          window.close()
+          setTimeout(function(){
+            window.close()
+          }, 100);
     }
 }
 
-window.addEventListener("contextmenu", function(e) { e.preventDefault(); }) //disable context menu on right click
+//window.addEventListener("contextmenu", function(e) { e.preventDefault(); }) //disable context menu on right click

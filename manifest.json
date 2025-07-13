@@ -2,7 +2,7 @@
   "name": "Black Tab",
   "description": "Just a black window. Fullscreen with click or F11.",
   "version": "1.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "background": {
     "scripts": ["background.js"]

@@ -8,5 +8,5 @@
     "scripts": ["background.js"]
   },
   "permissions": ["storage", "activeTab", "tabs"],
-  "browser_action": {}
+  "action": {}
 }

@@ -1,6 +1,6 @@
 // background.js
 
-chrome.browserAction.onClicked.addListener(function () {
+chrome.action.onClicked.addListener(function () {
 
   var width = 16500;
   var left = 1000;
